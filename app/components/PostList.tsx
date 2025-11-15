@@ -1,7 +1,10 @@
 import Link from "next/link";
+import { Post } from "@/interfaces/post";
 
-const PostList = (props) => {
-  const posts = props.posts;
+interface PostListProps {
+  posts: Post[];
+}
+const PostList = ({ posts }: PostListProps) => {
   return (
     <div className="post-list">
       {posts.map((post) => (
