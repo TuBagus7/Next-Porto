@@ -1,8 +1,13 @@
+import Link from "next/link";
+
 const Header = () =>{
     return(
         <header className="header">
           <nav>
-            <div className="logo"><a href="">Logo</a></div>
+            <div className="nav-links">
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+            </div>
           </nav>
         </header>
     )
