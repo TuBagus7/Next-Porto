@@ -6,14 +6,15 @@ const Header = () => {
     <header className="header">
       <nav>
         <div className="logo">
-          {/* <Link href="/"></Link> */}
-          <Image
-            src="/logo.jpg"
-            alt="Logo"
-            width={35}
-            height={35}
-            style={{ borderRadius: "50px" }}
-          />
+          <Link href="/">
+            <Image
+              src="/logo.jpg"
+              alt="Logo"
+              width={35}
+              height={35}
+              style={{ borderRadius: "50px" }}
+            />
+          </Link>
         </div>
         <div className="nav-links">
           <Link href="/">
