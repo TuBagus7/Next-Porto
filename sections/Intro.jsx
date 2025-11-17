@@ -74,7 +74,7 @@ const Intro = () => {
               {/* Download CV Button */}
               <Link
                 className="text-xl font-semibold rounded border border-red-500 hover:text-white hover:bg-red-500 px-2 py-1"
-                href="https://drive.google.com/file/d/1uk-tv12y8PK-WrE4oX2xRtmSy4PUVSsE/view"
+                href="https://drive.google.com/file/d/17cnUVUTATnv7Lh7DmpzaQ__IHyx-Ytwz/view?usp=drivesdk"
                 target="_blank"
               >
                 Download CV
@@ -88,7 +88,13 @@ const Intro = () => {
               "translate-x-[500px] transition-all opacity-0 duration-700 w-[180px] h-[300px] md:w-[240px] md:h-[400px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
             }
             ref={profileRef}
-            style={{ backgroundImage: "url(/images/male.png)" }}
+            style={{
+              backgroundImage: "url(/images/tb-logo.png)",
+              backgroundSize: "150% 100%",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              borderRadius: "100px",
+            }}
           />
         </div>
       </section>

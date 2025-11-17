@@ -10,7 +10,7 @@ export const ExperienceData = [
   },
   {
     companyName: "MILLENNIA AHEAD TECHNOLIOIES",
-    location: "Nagpur, India",
+    location: "Pekanbaru, Indonesia",
     role: "REACT JS INTERN",
     fromTo: "December 2022 - March 2023",
     description:
