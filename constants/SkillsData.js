@@ -161,7 +161,7 @@ export const TechStackData = [
         icon: <span className="md:text-4xl text-2xl">ID</span>,
       },
       {
-        name: "Angular",
+        name: "English",
         icon: <span className="md:text-4xl text-2xl">ENG</span>,
       },
     ],
