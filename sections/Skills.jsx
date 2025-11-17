@@ -57,7 +57,7 @@ const TechStack = () => {
         ref={techStackRef}
       >
         <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center gap-3">
-          <FaLaptopCode /> Tech Stack
+          <FaLaptopCode /> Ability
         </h2>
 
         <div
@@ -66,7 +66,7 @@ const TechStack = () => {
         >
           <button
             className={`w-[120px] md:w-[150px] p-2 font-bold ${
-              section === "Advance" ? "bg-red-600" : null
+              section === "Software" ? "bg-red-600" : null
             } transition-all`}
             onClick={(e) => {
               setSection(e.target.innerText);
@@ -78,7 +78,7 @@ const TechStack = () => {
           </button>
           <button
             className={`w-[120px] md:w-[150px] p-2 font-bold ${
-              section === "Good" ? "bg-red-600" : null
+              section === "Programming" ? "bg-red-600" : null
             } transition-all border-l border-r border-black dark:border-white border-solid`}
             onClick={(e) => {
               setSection(e.target.innerText);
@@ -86,11 +86,11 @@ const TechStack = () => {
                 techBoxesRef.current.classList.remove("pop-up-child");
             }}
           >
-            Good
+            Programming
           </button>
           <button
             className={`w-[100px] md:w-[150px] p-2 font-bold ${
-              section === "Familiar" ? "bg-red-600" : null
+              section === "Office" ? "bg-red-600" : null
             } transition-all`}
             onClick={(e) => {
               setSection(e.target.innerText);
@@ -98,7 +98,19 @@ const TechStack = () => {
                 techBoxesRef.current.classList.remove("pop-up-child");
             }}
           >
-            Familiar
+            Office
+          </button>
+          <button
+            className={`w-[120px] md:w-[150px] p-2 font-bold ${
+              section === "Speech" ? "bg-red-600" : null
+            } transition-all border-l border-r border-black dark:border-white border-solid`}
+            onClick={(e) => {
+              setSection(e.target.innerText);
+              if (section !== e.target.innerText)
+                techBoxesRef.current.classList.remove("pop-up-child");
+            }}
+          >
+            Speech
           </button>
         </div>
 
