@@ -43,41 +43,39 @@ const Intro = () => {
   return (
     <Fragment>
       <Head>
-        <title>Shiv&apos;s Portfolio</title>
+        <title>tu__good</title>
       </Head>
-      <section id='home'>
+      <section id="home">
         <div
-          className='min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm'
+          className="min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
           ref={homeRef}
         >
           <div
-            className='translate-x-[-500px] transition-all duration-700 opacity-0'
+            className="translate-x-[-500px] transition-all duration-700 opacity-0"
             ref={introRef}
           >
-            <p className='py-2 text-2xl md:text-4xl font-semibold font-sans'>
+            <p className="py-2 text-2xl md:text-4xl font-semibold font-sans">
               Hi There !
             </p>
             {/* Profile Name */}
-            <p className='text-2xl md:text-4xl py-2 font-semibold font-sans'>
-              I&apos;m a full stack
-              <span className='text-[#c72c6c] dark:text-[#07d0e5]'>
-                {" "}
-                developer <span className='text-white'>|</span>
-              </span>
+            <p className="text-2xl md:text-4xl py-2 font-semibold font-sans">
+              I&apos;m a IoT Enthusiast
+              <span className="text-[#c72c6c] dark:text-[#07d0e5]"> and</span>
+              <span className="ml-2">IT Programmer</span>
             </p>
-            <div className='mt-5 md:mt-10 flex gap-3'>
+            <div className="mt-5 md:mt-10 flex gap-3">
               {/* Hire Me Button */}
               <Link
-                className='text-white text-xl font-semibold rounded bg-red-400 hover:bg-red-500 px-2 py-1'
+                className="text-white text-xl font-semibold rounded bg-red-400 hover:bg-red-500 px-2 py-1"
                 href={"#getInTouch"}
               >
-                Hire me
+                Text Me
               </Link>
               {/* Download CV Button */}
               <Link
-                className='text-xl font-semibold rounded border border-red-500 hover:text-white hover:bg-red-500 px-2 py-1'
-                href='https://drive.google.com/file/d/1uk-tv12y8PK-WrE4oX2xRtmSy4PUVSsE/view'
-                target='_blank'
+                className="text-xl font-semibold rounded border border-red-500 hover:text-white hover:bg-red-500 px-2 py-1"
+                href="https://drive.google.com/file/d/1uk-tv12y8PK-WrE4oX2xRtmSy4PUVSsE/view"
+                target="_blank"
               >
                 Download CV
               </Link>
