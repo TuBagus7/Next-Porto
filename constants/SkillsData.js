@@ -4,44 +4,67 @@ import {
   SiNextdotjs,
   SiVercel,
   SiNetlify,
-  SiExpress,
-  SiRedux,
+  SiMysql,
+  SiPhpmyadmin,
   SiTailwindcss,
-  SiMui,
-  SiChakraui,
-  SiFirebase,
-  SiTypescript,
-  SiJquery,
+  SiMqtt,
+  SiArduino,
+  SiLibreofficebase,
+  SiGoogledocs,
+  SiGooglesheets,
+  SiGoogleslides,
+  SiJupyter,
+  SiPostman,
 } from "react-icons/si";
 import { DiJavascript1, DiReact, DiMongodb, DiSass } from "react-icons/di";
 import { BsGit, BsGithub } from "react-icons/bs";
-import {
-  FaBootstrap,
-  FaCss3Alt,
-  FaAngular,
-  FaPhp,
-  FaShopify,
-  FaJava,
-} from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaLaravel } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
+import {
+  PiMicrosoftWordLogoFill,
+  PiMicrosoftExcelLogoBold,
+  PiMicrosoftPowerpointLogoBold,
+} from "react-icons/pi";
+import { RiPhpLine } from "react-icons/ri";
+import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark";
 
 export const TechStackData = [
   {
     Software: [
       {
+        name: "Wokwi",
+        icon: (
+          <img
+            alt="Wokwi-logo"
+            className="md:w-12 w-8 transition-transform duration-300 hover:scale-110"
+            src="/images/Untitled.png"
+          />
+        ),
+      },
+      {
+        name: "Tinkercad",
+        icon: (
+          <img
+            alt="Tinkercad-logo"
+            className="md:w-12 w-10 transition-transform duration-300 hover:scale-110"
+            src="/images/Tinkercad.jpg"
+          />
+        ),
+      },
+      {
+        name: "Postman",
+        icon: <SiPostman className="md:text-4xl text-2xl" color="#fa6700" />,
+      },
+    ],
+    Programming: [
+      {
         name: "ReactJS",
         icon: <DiReact className="md:text-4xl text-2xl" color="#53c1de" />,
       },
       {
-        name: "JavaScript",
-        icon: (
-          <DiJavascript1 className="md:text-4xl text-2xl" color="#ffd600" />
-        ),
-      },
-      {
-        name: "Redux-toolkit",
-        icon: <SiRedux className="md:text-4xl text-2xl" color="#7e57c2" />,
+        name: "Arduino IDE",
+        icon: <SiArduino className="md:text-4xl text-2xl" color="#53c1de" />,
       },
       {
         name: "HTML5",
@@ -62,12 +85,45 @@ export const TechStackData = [
         ),
       },
       {
-        name: "Meterial UI",
-        icon: <SiMui className="md:text-4xl text-2xl" color="#29b6f6" />,
+        name: "MQTT",
+        icon: <SiMqtt className="md:text-4xl text-2xsl" color="#984cff" />,
+      },
+
+      {
+        name: "NextJS",
+        icon: (
+          <SiNextdotjs className="md:text-4xl text-2xl dark:text-white text-black" />
+        ),
       },
       {
-        name: "Chakra UI",
-        icon: <SiChakraui className="md:text-4xl text-2xsl" color="#50cbc0" />,
+        name: "MySQL",
+        icon: (
+          <SiMysql className="md:text-4xl text-2xl dark:text-white text-black" />
+        ),
+      },
+      {
+        name: "phpMyAdmin",
+        icon: <SiPhpmyadmin className="md:text-4xl text-2x" color="#f7a700" />,
+      },
+      {
+        name: "NodeJS",
+        icon: <SiNodedotjs className="md:text-4xl text-2xl" color="#4caf50" />,
+      },
+      {
+        name: "MongoDB",
+        icon: <DiMongodb className="md:text-4xl text-2xl" color="#4caf50" />,
+      },
+      {
+        name: "Laravel",
+        icon: <FaLaravel className="md:text-4xl text-2xl" color="#fb3a09" />,
+      },
+      {
+        name: "Jupyter",
+        icon: <SiJupyter className="md:text-4xl text-2xl" color="#f37626" />,
+      },
+      {
+        name: "netlify",
+        icon: <SiNetlify className="md:text-4xl text-2xl" color={"#31b5ba"} />,
       },
       {
         name: "Vercel",
@@ -80,79 +136,69 @@ export const TechStackData = [
         icon: <BsGithub className="md:text-4xl text-2xl" color="#c9d1d9" />,
       },
     ],
-    Programming: [
-      {
-        name: "NextJS",
-        icon: (
-          <SiNextdotjs className="md:text-4xl text-2xl dark:text-white text-black" />
-        ),
-      },
-      {
-        name: "NodeJS",
-        icon: <SiNodedotjs className="md:text-4xl text-2xl" color="#4caf50" />,
-      },
-      {
-        name: "Express",
-        icon: <SiExpress className="md:text-4xl text-2xl" color="#555555" />,
-      },
-      {
-        name: "MongoDB",
-        icon: <DiMongodb className="md:text-4xl text-2xl" color="#4caf50" />,
-      },
-      {
-        name: "firebase",
-        icon: <SiFirebase className="md:text-4xl text-2xl" color="#ffcd33" />,
-      },
-      {
-        name: "jQuery",
-        icon: <SiJquery className="md:text-4xl text-2xsl" color="#106dae" />,
-      },
-      {
-        name: "netlify",
-        icon: <SiNetlify className="md:text-4xl text-2xl" color={"#31b5ba"} />,
-      },
-      {
-        name: "Git",
-        icon: <BsGit className="md:text-4xl text-2xl" color="#f4511e" />,
-      },
-    ],
     Office: [
       {
-        name: "TypeScript",
-        icon: <SiTypescript className="md:text-4xl text-2xl" color="#377cc8" />,
-      },
-      {
-        name: "Angular",
-        icon: <FaAngular className="md:text-4xl text-2xl" color="#c50836" />,
-      },
-      {
-        name: "React Native",
+        name: "Word",
         icon: (
-          <TbBrandReactNative
-            className="md:text-4xl text-2xl"
-            color="#66dbfb"
+          <PiMicrosoftWordLogoFill
+            className="md:text-4xl text-3xl transition-transform duration-300 hover:scale-110"
+            color="#2B579A"
           />
         ),
       },
       {
-        name: "PHP",
-        icon: <FaPhp className="md:text-4xl text-2xl" color="#7b7fb5" />,
+        name: "PowerPoint",
+        icon: (
+          <PiMicrosoftPowerpointLogoBold
+            className="md:text-4xl text-3xl transition-transform duration-300 hover:scale-110 oklch(64.6% 0.222 41.116)"
+            color="#f06600"
+          />
+        ),
       },
       {
-        name: "JAVA",
-        icon: <FaJava className="md:text-4xl text-2xl" color="#547c99" />,
+        name: "Excel",
+        icon: (
+          <PiMicrosoftExcelLogoBold
+            className="md:text-4xl text-3xl transition-transform duration-300 hover:scale-110"
+            color="#217346"
+          />
+        ),
       },
       {
-        name: "SASS",
-        icon: <DiSass className="md:text-4xl text-2xl" color="#f06292" />,
+        name: "Libre",
+        icon: (
+          <SiLibreofficebase
+            className="md:text-4xl text-3xl transition-transform duration-300 hover:scale-110"
+            color="#20d05d"
+          />
+        ),
       },
       {
-        name: "MySQL",
-        icon: <GrMysql className="md:text-4xl text-2xl" color="#08668e" />,
+        name: "Docs",
+        icon: (
+          <SiGoogledocs
+            className="md:text-4xl text-3xl transition-transform duration-300 hover:scale-110"
+            color="#2B579A"
+          />
+        ),
       },
       {
-        name: "Shopify",
-        icon: <FaShopify className="md:text-4xl text-2xl" color="#99c14f" />,
+        name: "Sheet",
+        icon: (
+          <SiGooglesheets
+            className="md:text-4xl text-3xl transition-transform duration-300 hover:scale-110"
+            color="#00f052"
+          />
+        ),
+      },
+      {
+        name: "Slide",
+        icon: (
+          <SiGoogleslides
+            className="md:text-4xl text-3xl transition-transform duration-300 hover:scale-110"
+            color="#f7ff4c"
+          />
+        ),
       },
     ],
     Speech: [
