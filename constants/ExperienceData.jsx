@@ -9,12 +9,12 @@ export const ExperienceData = [
     side: "left",
   },
   {
-    companyName: "MILLENNIA AHEAD TECHNOLIOIES",
-    location: "Pekanbaru, Indonesia",
-    role: "REACT JS INTERN",
-    fromTo: "December 2022 - March 2023",
+    companyName: "Project-Based intern ",
+    location: "Online",
+    role: "Frontend Developer Intern",
+    fromTo: "1 April - 1May 2023",
     description:
-      "During this internship, we worked for a startup company to build an online salon appointment booking platform. In my first internship, I learned about version control tools like Git and GitHub. I spent a lot of time improving my skills in building UI and UX to advance my proficiency in CSS styling and JavaScript logic.",
+      "Completed a Final Project to create an e-commerce website UX using the Vue.js JavaScript Framework.",
     side: "right",
   },
 ];
