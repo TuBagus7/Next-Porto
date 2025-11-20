@@ -15,16 +15,23 @@ import {
   SiGoogleslides,
   SiJupyter,
   SiPostman,
+  SiObsstudio,
+  SiAnydesk,
+  SiVirtualbox,
+  SiNodered,
+  SiMendeley,
+  SiCanva,
+  SiAdobephotoshop,
 } from "react-icons/si";
 import { DiJavascript1, DiReact, DiMongodb, DiSass } from "react-icons/di";
 import { BsGit, BsGithub } from "react-icons/bs";
 import { FaBootstrap, FaCss3Alt, FaLaravel } from "react-icons/fa";
-import { TbBrandReactNative } from "react-icons/tb";
-import { GrMysql } from "react-icons/gr";
+import { VscVscode } from "react-icons/vsc";
 import {
   PiMicrosoftWordLogoFill,
   PiMicrosoftExcelLogoBold,
   PiMicrosoftPowerpointLogoBold,
+  PiFigmaLogoBold,
 } from "react-icons/pi";
 import { RiPhpLine } from "react-icons/ri";
 import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark";
@@ -33,28 +40,40 @@ export const TechStackData = [
   {
     Software: [
       {
-        name: "Wokwi",
-        icon: (
-          <img
-            alt="Wokwi-logo"
-            className="md:w-12 w-8 transition-transform duration-300 hover:scale-110"
-            src="/images/Untitled.png"
-          />
-        ),
-      },
-      {
-        name: "Tinkercad",
-        icon: (
-          <img
-            alt="Tinkercad-logo"
-            className="md:w-12 w-10 transition-transform duration-300 hover:scale-110"
-            src="/images/Tinkercad.jpg"
-          />
-        ),
-      },
-      {
         name: "Postman",
         icon: <SiPostman className="md:text-4xl text-2xl" color="#fa6700" />,
+      },
+      {
+        name: "VS Code",
+        icon: <VscVscode className="md:text-4xl text-2xl" color="#007acc" />,
+      },
+      {
+        name: "OBS Studio",
+        icon: <SiObsstudio className="md:text-4xl text-2xl" color="#ffffff" />,
+      },
+      {
+        name: "AnyDesk",
+        icon: <SiAnydesk className="md:text-4xl text-2xl" color="#ed1c24" />,
+      },
+      {
+        name: "VirtualBox",
+        icon: <SiVirtualbox className="md:text-4xl text-2xl" color="#183a61" />,
+      },
+      {
+        name: "Figma",
+        icon: (
+          <PiFigmaLogoBold className="md:text-4xl text-2xl" color="#f24e1e" />
+        ),
+      },
+      {
+        name: "Canva",
+        icon: <SiCanva className="md:text-4xl text-2xl" color="#00c4cc" />,
+      },
+      {
+        name: "Photoshop",
+        icon: (
+          <SiAdobephotoshop className="md:text-4xl text-2xl" color="#31a8ff" />
+        ),
       },
     ],
     Programming: [
@@ -88,7 +107,10 @@ export const TechStackData = [
         name: "MQTT",
         icon: <SiMqtt className="md:text-4xl text-2xsl" color="#984cff" />,
       },
-
+      {
+        name: "Node-RED",
+        icon: <SiNodered className="md:text-4xl text-2xsl" color="#ed1c24" />,
+      },
       {
         name: "NextJS",
         icon: (
@@ -199,6 +221,10 @@ export const TechStackData = [
             color="#f7ff4c"
           />
         ),
+      },
+      {
+        name: "Mendeley",
+        icon: <SiMendeley className="md:text-4xl text-2xl" color="#ed1c24" />,
       },
     ],
     Speech: [
