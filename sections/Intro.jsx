@@ -89,21 +89,19 @@ const Intro = () => {
           >
             {/* Smoke/Glow Animation Layer */}
             <div className="absolute inset-[-20px] -z-10 flex items-center justify-center">
-              <div className="absolute w-full h-full bg-purple-600/60 rounded-full blur-3xl animate-[spin_4s_linear_infinite]"></div>
-              <div className="absolute w-[90%] h-[90%] bg-fuchsia-500/50 rounded-full blur-3xl animate-[spin_6s_linear_infinite_reverse]"></div>
-              <div className="absolute w-[70%] h-[70%] bg-purple-800/40 rounded-full blur-2xl animate-pulse"></div>
+              <div className="absolute w-full h-full bg-purple-600/60 dark:bg-cyan-600/60 rounded-full blur-3xl animate-[spin_4s_linear_infinite]"></div>
+              <div className="absolute w-[90%] h-[90%] bg-fuchsia-500/50 dark:bg-cyan-500/50 rounded-full blur-3xl animate-[spin_6s_linear_infinite_reverse]"></div>
+              <div className="absolute w-[80%] h-[80%] bg-purple-800/40 dark:bg-cyan-800/40 rounded-full blur-2xl animate-pulse"></div>
             </div>
 
             {/* Profile Image */}
             <div
-              className="w-full h-full bg-cover bg-no-repeat bg-center relative z-10"
+              className="w-full h-full bg-cover bg-no-repeat bg-center relative z-10 shadow-[0_0_20px_rgba(147,51,234,0.3)] dark:shadow-[0_0_20px_rgba(7,208,229,0.3)]"
               style={{
                 backgroundImage: "url(/images/me.png)",
                 backgroundSize: "150% 100%",
                 borderRadius: "100px",
-                // "Texture" & Depth Effects
-                boxShadow: "inset 0 0 40px rgba(147, 51, 234, 0.5), 0 0 20px rgba(147, 51, 234, 0.3)", // Inner purple glow for depth
-                filter: "contrast(1.15) saturate(1.1) drop-shadow(0 0 10px rgba(0,0,0,0.5))", // Make image pop and add depth
+                filter: "brightness(0.7) contrast(1.2)" // Darken the image
               }}
             />
           </div>
