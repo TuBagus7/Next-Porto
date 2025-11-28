@@ -35,7 +35,7 @@ const Experience = () => {
     <Fragment>
       <section id='experience' ref={expeRef}>
         <h2 className='text-3xl font-bold text-center p-4 flex justify-center items-center gap-3'>
-          <MdWork /> Experience
+          <MdWork /> Experience / Internship
         </h2>
 
         <div

@@ -1,7 +1,7 @@
 export const EducationData = [
   {
     name: "Bachelor of Computer Science",
-    image: "/images/FAKULTAS-Copyf.jpg",
+    image: "/images/Uir Rektorat.jpg",
     schoolOrCollege: "University Islamic of Riau, Pekanbaru",
     fromTo: "2020 - 2024",
     statusOrPrecentage: "GPA : 3.79 / 4.00",

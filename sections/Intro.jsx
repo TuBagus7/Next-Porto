@@ -84,18 +84,29 @@ const Intro = () => {
 
           {/* Image */}
           <div
-            className={
-              "translate-x-[500px] transition-all opacity-0 duration-700 w-[180px] h-[300px] md:w-[240px] md:h-[400px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
-            }
+            className="translate-x-[500px] transition-all opacity-0 duration-700 relative w-[180px] h-[300px] md:w-[240px] md:h-[400px] m-auto md:m-0 mt-[40px] md:mt-0"
             ref={profileRef}
-            style={{
-              backgroundImage: "url(/images/tb-logo.png)",
-              backgroundSize: "150% 100%",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              borderRadius: "100px",
-            }}
-          />
+          >
+            {/* Smoke/Glow Animation Layer */}
+            <div className="absolute inset-[-20px] -z-10 flex items-center justify-center">
+              <div className="absolute w-full h-full bg-purple-600/60 rounded-full blur-3xl animate-[spin_4s_linear_infinite]"></div>
+              <div className="absolute w-[90%] h-[90%] bg-fuchsia-500/50 rounded-full blur-3xl animate-[spin_6s_linear_infinite_reverse]"></div>
+              <div className="absolute w-[70%] h-[70%] bg-purple-800/40 rounded-full blur-2xl animate-pulse"></div>
+            </div>
+
+            {/* Profile Image */}
+            <div
+              className="w-full h-full bg-cover bg-no-repeat bg-center relative z-10"
+              style={{
+                backgroundImage: "url(/images/me.png)",
+                backgroundSize: "150% 100%",
+                borderRadius: "100px",
+                // "Texture" & Depth Effects
+                boxShadow: "inset 0 0 40px rgba(147, 51, 234, 0.5), 0 0 20px rgba(147, 51, 234, 0.3)", // Inner purple glow for depth
+                filter: "contrast(1.15) saturate(1.1) drop-shadow(0 0 10px rgba(0,0,0,0.5))", // Make image pop and add depth
+              }}
+            />
+          </div>
         </div>
       </section>
     </Fragment>
