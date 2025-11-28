@@ -1,3 +1,4 @@
+import WavingFlag from "@/components/WavingFlag";
 import { AiFillHtml5 } from "react-icons/ai";
 import {
   SiNodedotjs,
@@ -72,7 +73,7 @@ export const TechStackData = [
       {
         name: "Photoshop",
         icon: (
-          <SiAdobephotoshop className="md:text-4xl text-2xl" color="#31a8ff" />
+          <SiAdobephotoshop className="md:text-4xl text-2xl" color="blue" />
         ),
       },
     ],
@@ -229,12 +230,12 @@ export const TechStackData = [
     ],
     Speech: [
       {
-        name: "Indoneisa",
-        icon: <span className="md:text-4xl text-2xl">ID</span>,
+        name: "Indonesia",
+        icon: <WavingFlag country="indonesia" />,
       },
       {
         name: "English",
-        icon: <span className="md:text-4xl text-2xl">ENG</span>,
+        icon: <WavingFlag country="uk" />,
       },
     ],
   },

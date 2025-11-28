@@ -61,9 +61,12 @@ const Experience = () => {
                   }
                 >
                   <div className='flex justify-between gap-2'>
-                    <p className='text-xl md:text-2xl font-bold text-red-600'>
-                      {experience.companyName}
-                    </p>
+                    <div className='flex items-center gap-3'>
+                      {experience.icon}
+                      <p className='text-xl md:text-2xl font-bold text-red-600'>
+                        {experience.companyName}
+                      </p>
+                    </div>
                     <p className='flex gap-2 items-center text-blue-500'>
                       <ImLocation /> {experience.location}
                     </p>
@@ -136,9 +139,12 @@ const Experience = () => {
                   }
                 >
                   <div className='flex justify-between gap-2'>
-                    <p className='text-xl md:text-2xl font-bold text-red-600'>
-                      {experience.companyName}
-                    </p>
+                    <div className='flex items-center gap-3'>
+                      {experience.icon}
+                      <p className='text-xl md:text-2xl font-bold text-red-600'>
+                        {experience.companyName}
+                      </p>
+                    </div>
                     <p className='flex gap-2 items-center text-blue-500'>
                       <ImLocation /> {experience.location}
                     </p>
