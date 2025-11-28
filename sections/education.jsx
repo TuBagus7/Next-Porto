@@ -37,7 +37,7 @@ const Education = () => {
   return (
     <Fragment>
       <section
-        className="min-h-[50vh] shadow-zinc-300 dark:shadow-zinc-700 shadow-sm overflow-x-hidden"
+        className="min-h-[50vh] shadow-zinc-300 dark:shadow-zinc-700 shadow-sm overflow-x-hidden flex flex-col"
         id="education"
         ref={educationRef}
       >
@@ -46,7 +46,7 @@ const Education = () => {
         </h2>
 
         <div
-          className="pop-down-child pb-[30px] px-[10px] md:px-[10px] lg:px-[20px] flex flex-col items-center gap-[20px] "
+          className="pop-down-child pb-[30px] px-[10px] md:px-[10px] lg:px-[20px] flex flex-col items-center gap-[20px] flex-grow justify-center"
           ref={educationBoxesRef}
         >
           {EducationData.map((education) => (

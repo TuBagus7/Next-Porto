@@ -1,8 +1,8 @@
 export const EducationData = [
   {
-    name: "Bachelor of Computer Science",
+    name: "University Islamic of Riau",
     image: "/images/Uir Rektorat.jpg",
-    schoolOrCollege: "University Islamic of Riau, Pekanbaru",
+    schoolOrCollege: "Informatics Engineering",
     fromTo: "2020 - 2024",
     statusOrPrecentage: "GPA : 3.79 / 4.00",
   },
