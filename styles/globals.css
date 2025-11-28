@@ -7,6 +7,11 @@
   -webkit-scroll-behavior: smooth !important; /* other browsers */
 }
 
+/* Prevent sections from being hidden behind fixed navbar */
+section {
+  scroll-margin-top: 70px;
+}
+
 p,
 div {
   text-align: justify;

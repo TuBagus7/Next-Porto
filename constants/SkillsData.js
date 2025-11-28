@@ -49,11 +49,11 @@ export const TechStackData = [
       },
       {
         name: "OBS Studio",
-        icon: <SiObsstudio className="md:text-4xl text-2xl" color="#ffffff" />,
+        icon: <SiObsstudio className="md:text-4xl text-2xl dark:text-white text-black" />,
       },
       {
         name: "AnyDesk",
-        icon: <SiAnydesk className="md:text-4xl text-2xl" color="#ed1c24" />,
+        icon: <SiAnydesk className="md:text-4xl text-2xl dark:text-white text-black" color="#ed1c24" />,
       },
       {
         name: "VirtualBox",

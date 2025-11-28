@@ -9,7 +9,7 @@ const ShoveeModal = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowModal(true);
-    }, 25000);
+    }, 35000);
   }, []);
 
   return (
@@ -19,7 +19,7 @@ const ShoveeModal = () => {
     >
       <div className='p-5 bg-white dark:bg-black rounded'>
         <p className='text-black dark:text-white'>
-          Create your personal portfolio website in 5 minutes with{" "}
+          Sup! Wanna discuss with me?{" "}
         </p>
         <div className='mt-2 flex justify-center'>
           <Link
@@ -30,11 +30,14 @@ const ShoveeModal = () => {
             <Image
               alt='logo'
               height={40}
-              src='https://res.cloudinary.com/dhcc4rnbc/image/upload/v1696225956/logo_etsxfz.png'
+              src='/images/tb-logo.png'
+              style={{
+                borderRadius: "10px",
+              }}
               width={40}
             />
             <p>
-              <span className='text-[#17c1ff] font-semibold'>SHOVEE</span>
+              <span className='text-[#17c1ff] font-semibold'>TuBagus</span>
             </p>
           </Link>
         </div>
@@ -43,14 +46,14 @@ const ShoveeModal = () => {
             className='text-white px-3 py-2 bg-gray-800 rounded'
             onClick={() => setShowModal(false)}
           >
-            Ask Me Later
+            Maybe Later
           </button>
           <Link
             className='text-white px-3 py-2 bg-blue-600 rounded'
-            href='https://shovee.com'
-            target='_blank'
+            href='#getInTouch'
+            onClick={() => setShowModal(false)}
           >
-            Go To Shovee
+            Yes, Next
           </Link>
         </div>
       </div>
