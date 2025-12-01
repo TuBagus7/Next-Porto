@@ -64,7 +64,7 @@ const Experience = () => {
                     <div className='flex items-center gap-3'>
                       {experience.icon}
                       <p className='text-xl md:text-2xl font-bold text-red-600'>
-                        {experience.companyName}
+                        {experience.role}
                       </p>
                     </div>
                     <p className='flex gap-2 items-center text-blue-500'>
@@ -73,7 +73,7 @@ const Experience = () => {
                   </div>
 
                   <div className='flex justify-between text-gray-600 dark:text-gray-400 gap-2 mt-2'>
-                    <p className='font-semibold'>{experience.role}</p>
+                    <p className='font-semibold'>{experience.companyName}</p>
                     <p>{experience.fromTo}</p>
                   </div>
 
@@ -142,7 +142,7 @@ const Experience = () => {
                     <div className='flex items-center gap-3'>
                       {experience.icon}
                       <p className='text-xl md:text-2xl font-bold text-red-600'>
-                        {experience.companyName}
+                        {experience.role}
                       </p>
                     </div>
                     <p className='flex gap-2 items-center text-blue-500'>
@@ -151,7 +151,7 @@ const Experience = () => {
                   </div>
 
                   <div className='flex justify-between text-gray-600 dark:text-gray-400 mt-2 gap-2'>
-                    <p className='font-semibold'>{experience.role}</p>
+                    <p className='font-semibold'>{experience.companyName}</p>
                     <p>{experience.fromTo}</p>
                   </div>
                   <p

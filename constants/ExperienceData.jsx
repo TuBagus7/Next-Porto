@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export const ExperienceData = [
   {
-    companyName: "IoT Mentor",
+    companyName: "KelasIoT",
     location: "Jakarta, Indonesia",
-    role: "KelasIoT",
+    role: "IoT Mentor",
     fromTo: "August 2024 - Present",
     description:
       "I help participants design and build simple IoT devices using sensors and communication modules like WiFi, MQTT, or HTTP. I also teach the basics of IoT and how to get devices online, help troubleshoot any technical issues they run into, and basically learn and explore the tech together with them.",
@@ -21,9 +21,9 @@ export const ExperienceData = [
     ),
   },
   {
-    companyName: "Research Assistant",
+    companyName: "Islamic University of Riau",
     location: "Riau, Indonesia",
-    role: "Islamic University of Riau",
+    role: "Research Assistant",
     fromTo: "June 2024 - January 2025",
     description:
       "I assist lecturers with their research, handle assigned tasks professionally, and build project prototypes using microcontrollers. I also work on various Internet of Things projects and continue developing new ones along the way.",
