@@ -21,8 +21,9 @@ const NavbarMobile = ({ setShowMenu, setThemeFun, theme, showMenu, top }) => {
         </button>
 
         {/* Name Logo */}
-        <p className="text-gray-400 flex">
-          <span className="text-lg font-bold">TBDF</span> <DiTechcrunch />
+        <p className="flex items-center gap-1">
+          <span className="text-xl font-bold shimmer-logo">TBDF</span> 
+          <DiTechcrunch className="text-[#07d0e5] animate-[spin_10s_linear_infinite]" />
         </p>
       </div>
 

@@ -94,3 +94,17 @@ div {
 .social-show > div {
   transform: scale(0.9);
 }
+
+/* Logo Shimmer Animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-logo {
+  background: linear-gradient(90deg, #c72c6c, #07d0e5, #c72c6c);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s infinite linear;
+}

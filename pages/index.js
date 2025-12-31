@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
@@ -48,7 +48,7 @@ const Home = () => {
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
         {/* <!-- Favicon --> */}
-        <link href="https://shiv-s-portfolio.vercel.app/favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="/images/me.png" rel="icon" type="image/x-icon" />
 
       </Head>
       <div>
